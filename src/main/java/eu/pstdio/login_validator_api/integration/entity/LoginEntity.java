@@ -9,6 +9,8 @@ public interface LoginEntity {
     Long getId();
     void setHashedPasswd(String hashedPasswd);
     String getHashedPasswd();
+    void setSlat(String salt);
+    String getSalt();
     void setDisabled(boolean disabled);
     boolean isDisabled();
 }
